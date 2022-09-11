@@ -51,4 +51,42 @@ public class JavaDocs {
          * @deprecated Describe why this method is outdated. A replacement can also be specified.
          */
     }
+
+    public void linkJavadoc() {
+        /**
+         * You can link to the javadoc of an already imported class using {@link ClassName}.
+         *
+         * You can also use the fully-qualified name, if the class is not already imported:
+         *  {@link some.other.ClassName}
+         *
+         * You can link to members (fields or methods) of a class like so:
+         *  {@link ClassName#someMethod()}
+         *  {@link ClassName#someMethodWithParameters(int, String)}
+         *  {@link ClassName#someField}
+         *  {@link #someMethodInThisClass()} - used to link to members in the current class
+         *
+         * You can add a label to a linked javadoc like so:
+         *  {@link ClassName#someMethod() link text}
+         *
+         * You can also add a "See Also" tag, which appears at the bottom.
+         * @see ClassName#someMethod()
+         *
+         * If you want to link to external resources, use the HTML <a href="https://books.goalkicker.com">tag</a>
+         */
+    }
+
+    public void codeJavadoc() {
+        /**
+         * Code blocks inside javadocs
+         *
+         * This is a {@code inline("code example")}.
+         *
+         * You should wrap it in pre tags when writing multiline code.
+         * <pre>{@code
+         * Example example1 = new Example();
+         * example1.showMoreThanOneLine();
+         * }</pre>
+         *
+         */
+    }
 }
